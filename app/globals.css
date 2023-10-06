@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* header */
+.sticky-navbar {
+  box-shadow: -1px 5px 47px -6px rgba(230, 230, 230, 1);
+  background-color: #fff;
+}
+
+.nav-link {
+  @apply cursor-pointer text-black  transition hover:opacity-75 hover:text-primary hover:font-extrabold
+}
+
+.nav-close-btn,
+.nav-open-btn {
+  display: none;
+}
+
+@media only screen and (max-width: 900px) {
+  .menu {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 720px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 7rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    gap: 2rem;
+    font-weight: bold;
+    background-color: #fff;
+    transition: 0.5s;
+    transform: translateY(-500vh);
+    z-index: 1;
+  }
+
+  .nav-close-btn,
+  .nav-open-btn {
+    display: block;
+  }
+
+  .nav-close-btn {
+    position: absolute;
+    top: 1.3rem;
+    right: 1.5rem;
+  }
+
+  .responsive_nav {
+    transform: none;
+  }
+}
+/*  */
+
+.container_layout {
+ @apply px-5 md:px-20
+}
+
+.block_product {
+
+  @apply bg-secundary cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-2 transition-transform flex flex-col items-center justify-center
+}

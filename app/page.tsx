@@ -1,3 +1,4 @@
+import { CallProducts } from "@/components/CallProducts";
 import { Header } from "@/components/Header";
 import { HomeComponent } from "@/components/HomeComponent";
 
@@ -6,6 +7,7 @@ export default async function Home() {
     <main>
       <Header />
       <HomeComponent />
+      <CallProducts />
     </main>
   );
 }

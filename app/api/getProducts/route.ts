@@ -4,9 +4,8 @@ import { sanityClient } from "@/sanity";
 
 const query = groq`*[_type == "product"] {
   _id,
-  title,
   ...
-} | order(_createdAt asc)`
+} `
 
 type Data = {
   products: Product[]

@@ -5,7 +5,6 @@ import { type } from "os";
 
 const query = groq`*[_type == "iphones"] {
   _id,
-  title,
   ...
 }`
 

@@ -45,15 +45,17 @@ export const HomeComponent = () => {
       </section>
 
       <section className="px-5 md:px-20 flex flex-col md:flex-row items-center justify-center">
-        <div className="w-[350px] h-full md:w-[600px] md:h-[520px] block_product">
-          <Image
-            src="/notebook_banner.png"
-            width={800}
-            height={800}
-            alt="Notebook"
-          />
-          <p className="p-5 font-semibold text-xl">Notebooks</p>
-        </div>
+        <Link href="/notebooks">
+          <div className="w-[350px] h-full md:w-[600px] md:h-[520px] block_product">
+            <Image
+              src="/notebook_banner.png"
+              width={800}
+              height={800}
+              alt="Notebook"
+            />
+            <p className="p-5 font-semibold text-xl">Notebooks</p>
+          </div>
+        </Link>
         <div className="flex flex-col mt-5 md:mt-0">
           <div className="flex flex-wrap">
             <div className="block_product md:ml-5 w-full my-5 md:my-0  md:w-[300px] md:h-[250px]">

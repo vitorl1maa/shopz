@@ -3,28 +3,27 @@ import { groq } from "next-sanity";
 import { NextRequest, NextResponse } from "next/server";
 
 
-const query = groq`*[_type == "iphones"] {
+const query = groq`*[_type == "notebooks"] {
   _id,
   ...
 }`
 
 type Data = {
-  iPhone: Iphones
+  notebooks: Notebooks
 }
 
 export async function GET(
   req: NextRequest,
-  res: NextResponse<Data>,
+  res: NextResponse<Data>
 ){
   try {
-    const iPhones = await sanityClient.fetch(query);
-    if(iPhones) {
-      return NextResponse.json({iPhones}, {status: 200})
+    const notebooks = await sanityClient.fetch(query)
+    if(notebooks) {
+      return NextResponse.json({notebooks}, {status: 200})
     } else {
       return NextResponse.json({message: "Erro ao buscar produtos"}, {status: 404})
     }
   } catch(error) {
     console.error("Erro interno no servidor", error);
-    
   }
 }

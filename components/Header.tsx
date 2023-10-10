@@ -64,9 +64,13 @@ export const Header = () => {
             <span className="rounded-full md:hidden">Entrar</span>
           )}
           <ul className="flex flex-col items-center md:flex-row gap-5">
-            <li className="nav-link">Home</li>
+            <Link href="/">
+              <li className="nav-link">Home</li>
+            </Link>
             <li className="nav-link">Celulares</li>
-            <li className="nav-link">Notebooks</li>
+            <Link href="/notebooks">
+              <li className="nav-link">Notebooks</li>
+            </Link>
             <li className="nav-link">Linha Gamer</li>
           </ul>
           <button onClick={showNavbar}>

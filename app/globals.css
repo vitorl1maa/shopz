@@ -13,6 +13,10 @@
   @apply cursor-pointer text-black  transition hover:opacity-75 hover:text-primary hover:font-extrabold
 }
 
+.footer-link {
+  @apply text-white flex flex-col items-center md:items-start hover:font-semibold hover:text-primary cursor-pointer
+}
+
 .nav-close-btn,
 .nav-open-btn {
   display: none;

@@ -1,5 +1,6 @@
-import { CallAppleWatch } from "@/components/CallAppleWatch";
+import { CallBands } from "@/components/CallBands";
 import { CallProducts } from "@/components/CallProducts";
+import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { HomeComponent } from "@/components/HomeComponent";
 
@@ -9,7 +10,8 @@ export default async function Home() {
       <Header />
       <HomeComponent />
       <CallProducts />
-      <CallAppleWatch />
+      <CallBands />
+      <Footer />
     </main>
   );
 }

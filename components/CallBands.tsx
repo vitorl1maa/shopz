@@ -8,7 +8,7 @@ import Fade from "react-reveal/Fade";
 
 export const CallBands = () => {
   return (
-    <section className="bg-black text-white mt-32 pt-32 flex flex-col items-center justify-center">
+    <section className="bg-black text-white mt-32 py-32 flex flex-col items-center justify-center">
       <h1 className="text-4xl md:text-7xl font-extrabold text-primary">
         Tecnologia e Estilo
       </h1>

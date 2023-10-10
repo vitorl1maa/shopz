@@ -71,7 +71,9 @@ export const Header = () => {
             <Link href="/notebooks">
               <li className="nav-link">Notebooks</li>
             </Link>
-            <li className="nav-link">Linha Gamer</li>
+            <Link href="/linha-gamer">
+              <li className="nav-link">Linha Gamer</li>
+            </Link>
           </ul>
           <button onClick={showNavbar}>
             <X className="cursor-pointer nav-close-btn text-4xl lg:text-2xl text-DarkBlue" />

@@ -4,7 +4,8 @@ import { NextRequest, NextResponse } from "next/server";
 
 
 const query = groq`*[_type == "notebooks"] {
-  _id,
+  id,
+  _title,
   ...
 }`
 

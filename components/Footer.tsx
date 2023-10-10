@@ -12,7 +12,7 @@ import React from "react";
 
 export const Footer = () => {
   return (
-    <footer className="bg-black pt-52">
+    <footer className="bg-black pt-20">
       <div className="text-white flex flex-col-reverse md:flex-row gap-20 items-center md:items-start justify-between container_layout py-10">
         <ul>
           <li className="footer-link">
